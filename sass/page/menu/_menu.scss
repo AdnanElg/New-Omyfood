@@ -1,0 +1,119 @@
+// ********************* DÉBUT MENU ***********************/
+// Début Header :
+.container__header__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    background-color: #ffff;
+
+    & a img {
+        max-width: 230px;
+        width: 100%;
+    }
+
+    & img {
+        max-width: 230px;
+        width: 100%;
+
+        @media (max-width: 425px) {
+          max-width: 165px;
+        }
+    }
+  }
+// Fin Header :
+
+
+// Début Main :
+.container__main__menu {
+  // Début Section 1 :
+
+
+  // Fin Section 1 :
+  
+
+  // Début du footer : 
+  .container__footer__menu {
+    background-color: #353535;
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 70px;
+    padding-top: 50px;;
+    cursor: pointer;
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+      align-items: start;
+      gap: 20px;
+    }
+
+    &__block1 {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      gap: 15px;
+    
+
+      @media (max-width: 900px) {
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+        order: 2;
+      }
+
+      &__text {
+        display: flex;
+        gap: 10px;
+
+        & img {
+          color: #ffff;
+          object-fit: cover;
+        }
+        & p {
+          color: #ffff;
+        }
+      }
+    }
+    &__block2 {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      gap: 15px;
+
+      @media (max-width: 900px) {
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+        order: 3;
+      }
+
+      & p {
+        color: #ffff;
+      }
+    }
+    &__block3 {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      gap: 15px;
+
+      @media (max-width: 900px) {
+        order: 1;
+      }
+
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  // Fin du footer : 
+}
+// Fin du Main
+
+// ********************* FIN MENU ***********************/

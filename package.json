@@ -1,0 +1,14 @@
+{
+  "name": "project-omyfood-new",
+  "version": "1.0.0",
+  "description": "Project-Omyfood-new",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/style.scss ./css/style.css"
+  },
+  "author": "El Ghalbzouri Adnan",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.68.0"
+  }
+}
