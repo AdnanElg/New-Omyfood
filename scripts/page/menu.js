@@ -1,4 +1,6 @@
 import { service } from "../services/services.js";
+import { banner } from "../components/banner.js";
+import { blockMenu } from "../components/blockMenu.js";
 
 // Menu : 
 const menu = () => {
@@ -8,6 +10,16 @@ const menu = () => {
 
 	const dataRestaurantById = service.getRestaurantById(id); 
 
+	const backgroundBanner = document.querySelector(
+		".container__main__menu__block"
+	);
+    backgroundBanner.append(banner(dataRestaurantById)); 
+
+
+    const sectionMenu = document.querySelector(
+		".container__main__menu__section1"
+	);
+    sectionMenu.append(blockMenu(dataRestaurantById)); 
 };
 
 menu(); 

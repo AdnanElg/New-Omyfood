@@ -1,4 +1,12 @@
   // ********************* DÉBUT HOME PAGE ***********************/
+
+  // Début de la font :
+  @font-face {
+    font-family: "Inter", sans-serif;
+    src: url("/fonts/polices/Inter/static/Inter-Light.ttf") format("truetype");
+  }  
+  // Fin de la font :
+
   // Début Header :
   .container__header__homepage {
     display: flex;
@@ -39,6 +47,7 @@
         color: #353535;
         font-weight: 500;
         text-align: center;
+        font-family: "Inter", sans-serif;
       }
     }
   
@@ -58,6 +67,7 @@
         color: #000000;
         font-weight: 600;
         text-align: center;
+        font-family: "Inter", sans-serif;
   
         @media (max-width: 425px) {
           font-size: 30px;
@@ -69,6 +79,7 @@
         color: #343535;
         font-weight: 300;
         text-align: center;
+        font-family: "Inter", sans-serif;
       }
   
       & button {
@@ -77,6 +88,7 @@
         border-radius: 25px;
         font-size: 16px;
         color: #ffff;
+        font-family: "Inter", sans-serif;
         background: linear-gradient(
           to top,
           rgba(147, 86, 220, 0.9),
@@ -103,7 +115,7 @@
         color: #000000;
         font-weight: 600;
         margin-bottom: 50px;
-  
+        font-family: "Inter", sans-serif;
       }
   
       &__fonctionnement {
@@ -145,6 +157,7 @@
             font-weight: 600;
             padding: 5px 10px 5px 10px;
             border-radius: 50%;
+            font-family: "Inter", sans-serif;
           }
   
           & img {
@@ -156,6 +169,7 @@
             color: #000000;
             font-size: 16px;
             font-weight: 500;
+            font-family: "Inter", sans-serif;
           }
         }
       }
@@ -177,6 +191,7 @@
         color: #000000;
         font-weight: 600;
         margin-bottom: 50px;
+        font-family: "Inter", sans-serif;
       }
   
       &__cards {
@@ -218,6 +233,7 @@
               position: absolute;
               right: 15px;
               top: 10px;
+              font-family: "Inter", sans-serif;
             }
   
             &__caption {
@@ -229,17 +245,19 @@
       
               &__text {
                 line-height: 23px;
-      
+                
                 & h3 {
                   font-size: 18px;
                   color: #000000;
                   font-weight: 700;
+                  font-family: "Inter", sans-serif;
                 }
       
                 & p {
                   font-size: 17px;
                   font-weight: 300;
                   color: #000000;
+                  font-family: "Inter", sans-serif;
                 }
               }
       
@@ -309,6 +327,7 @@
           }
           & p {
             color: #ffff;
+            font-family: "Inter", sans-serif;
           }
         }
       }
@@ -327,6 +346,7 @@
   
         & p {
           color: #ffff;
+          font-family: "Inter", sans-serif;
         }
       }
       &__block3 {

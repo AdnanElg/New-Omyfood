@@ -1,4 +1,13 @@
 // ********************* DÉBUT MENU ***********************/
+
+// Début de la font :
+  @font-face {
+    font-family: "Shrikhand";
+    src: url("/fonts/polices/shrikhand/Shrikhand-Regular.ttf") format("truetype");
+  }  
+// Fin de la font :
+
+
 // Début Header :
 .container__header__menu {
     display: flex;
@@ -27,12 +36,184 @@
 
 // Début Main :
 .container__main__menu {
+  width: 100%;
+
+  &__block {
+    width: 100%;
+    
+    &__banner img {
+      width: 100%;
+      max-width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+    }
+  }
+
   // Début Section 1 :
+  &__section1 {
+    background-color: #ffff;
+    display: flex;
+    justify-content: center;
 
+    &__backround{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: #F7F7F7;
+      width: 80%;
+      padding: 50px;
+      border-radius: 35px 35px 0px 0px;
+      margin-top: -45px;
 
+      @media (max-width: 900px) {
+        width: 100%;
+      }
+
+      @media (max-width: 500px) {
+        padding: 30px;
+      }
+
+      &__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+
+        & h3 {
+          color: #101010;
+          font-size: 30px;
+          font-weight: 400;
+          font-family: "Shrikhand";
+
+          @media (max-width: 375px) {
+            font-size: 27px;
+          }
+
+          @media (max-width: 320px) {
+            font-size: 21px;
+          }
+        }
+
+        & i {
+          font-size: 28px;
+          color: #000000;
+          cursor: pointer;
+         }    
+
+         & i:hover {
+          font-weight: 600;
+          color: #BB64DC;
+          transform: scale(1.1);
+          transition-delay: 0.2s;
+         }
+      }
+
+      &__blocks {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 65%;
+        margin: 50px 50px;
+        gap: 40px;
+
+        @media (max-width: 900px) {
+          width: 100%;
+        }
+
+        &__block {  
+          display: flex;
+          justify-content: flex-start;
+          align-items: self-start;
+          flex-direction: column;
+          gap: 20px;
+
+          & h4 {
+            color: #000;
+            font-family: Roboto;
+            font-size: 18px;
+            font-weight: 300;
+            border-bottom: solid 3px #99E2D0;
+            width: 7%;
+          }
+
+          &__card {
+            padding: 15px;
+            background-color: #ffff;
+            border-radius: 15px;
+            box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &__text {
+              display: flex;
+              flex-direction: column;
+              gap: 5px;
+              width: 80%;
+
+              & h5 {
+                color: #000;
+                font-family: Roboto;
+                font-size: 18px;
+                font-weight: 600;
+              }
+
+              & p {
+                color: #000;
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 300;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              }
+            }
+
+            &__price {
+              display: flex;
+              justify-content: flex-end;
+              align-items: flex-end;
+              flex-direction: column;
+              
+              & span {
+                color: #353535;
+                font-family: Roboto;
+                font-size: 16x;
+                font-weight: 700;
+              }
+            }
+          }
+        }
+      }
+
+      &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & button {
+          border: none;
+          padding: 17px 60px 17px 60px;
+          border-radius: 25px;
+          font-size: 17px;
+          color: #ffff;
+          font-family: Roboto;
+          background: linear-gradient(
+            to top,
+            rgba(147, 86, 220, 0.9),
+            rgba(255, 121, 218, 0.9)
+          );
+          text-align: center;
+          box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+          cursor: pointer;
+        }
+      }
+    }
+  }
   // Fin Section 1 :
   
-
   // Début du footer : 
   .container__footer__menu {
     background-color: #353535;

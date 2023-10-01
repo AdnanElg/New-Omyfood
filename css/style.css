@@ -308,17 +308,16 @@ template {
   display: none;
 }
 
-@font-face {
-  font-family: "Inter", sans-serif;
-  src: url("/fonts/polices/Inter/static/Inter-Light.ttf") format("truetype");
-}
 * {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  font-family: "Inter", sans-serif;
 }
 
+@font-face {
+  font-family: "Inter", sans-serif;
+  src: url("/fonts/polices/Inter/static/Inter-Light.ttf") format("truetype");
+}
 .container__header__homepage {
   display: flex;
   flex-direction: column;
@@ -354,6 +353,7 @@ template {
   color: #353535;
   font-weight: 500;
   text-align: center;
+  font-family: "Inter", sans-serif;
 }
 .container__main__homepage__section1 {
   display: flex;
@@ -370,6 +370,7 @@ template {
   color: #000000;
   font-weight: 600;
   text-align: center;
+  font-family: "Inter", sans-serif;
 }
 @media (max-width: 425px) {
   .container__main__homepage__section1 h1 {
@@ -381,6 +382,7 @@ template {
   color: #343535;
   font-weight: 300;
   text-align: center;
+  font-family: "Inter", sans-serif;
 }
 .container__main__homepage__section1 button {
   border: none;
@@ -388,6 +390,7 @@ template {
   border-radius: 25px;
   font-size: 16px;
   color: white;
+  font-family: "Inter", sans-serif;
   background: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   text-align: center;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
@@ -407,6 +410,7 @@ template {
   color: #000000;
   font-weight: 600;
   margin-bottom: 50px;
+  font-family: "Inter", sans-serif;
 }
 .container__main__homepage__section2__fonctionnement {
   display: flex;
@@ -450,6 +454,7 @@ template {
   font-weight: 600;
   padding: 5px 10px 5px 10px;
   border-radius: 50%;
+  font-family: "Inter", sans-serif;
 }
 .container__main__homepage__section2__fonctionnement__block img {
   color: #7E7E7E;
@@ -459,6 +464,7 @@ template {
   color: #000000;
   font-size: 16px;
   font-weight: 500;
+  font-family: "Inter", sans-serif;
 }
 .container__main__homepage__section3 {
   background-color: #f7f7f7;
@@ -475,6 +481,7 @@ template {
   color: #000000;
   font-weight: 600;
   margin-bottom: 50px;
+  font-family: "Inter", sans-serif;
 }
 .container__main__homepage__section3__cards {
   display: flex;
@@ -515,6 +522,7 @@ template {
   position: absolute;
   right: 15px;
   top: 10px;
+  font-family: "Inter", sans-serif;
 }
 .container__main__homepage__section3__cards__card__anchor__caption {
   display: flex;
@@ -530,11 +538,13 @@ template {
   font-size: 18px;
   color: #000000;
   font-weight: 700;
+  font-family: "Inter", sans-serif;
 }
 .container__main__homepage__section3__cards__card__anchor__caption__text p {
   font-size: 17px;
   font-weight: 300;
   color: #000000;
+  font-family: "Inter", sans-serif;
 }
 .container__main__homepage__section3__cards__card__anchor__caption__icône {
   display: flex;
@@ -593,6 +603,7 @@ template {
 }
 .container__main__homepage .container__homepage__footer__block1__text p {
   color: white;
+  font-family: "Inter", sans-serif;
 }
 .container__main__homepage .container__homepage__footer__block2 {
   display: flex;
@@ -610,6 +621,7 @@ template {
 }
 .container__main__homepage .container__homepage__footer__block2 p {
   color: white;
+  font-family: "Inter", sans-serif;
 }
 .container__main__homepage .container__homepage__footer__block3 {
   display: flex;
@@ -628,6 +640,10 @@ template {
   object-fit: cover;
 }
 
+@font-face {
+  font-family: "Shrikhand";
+  src: url("/fonts/polices/shrikhand/Shrikhand-Regular.ttf") format("truetype");
+}
 .container__header__menu {
   display: flex;
   flex-direction: row;
@@ -650,6 +666,165 @@ template {
   }
 }
 
+.container__main__menu {
+  width: 100%;
+}
+.container__main__menu__block {
+  width: 100%;
+}
+.container__main__menu__block__banner img {
+  width: 100%;
+  max-width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+.container__main__menu__section1 {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+.container__main__menu__section1__backround {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #F7F7F7;
+  width: 80%;
+  padding: 50px;
+  border-radius: 35px 35px 0px 0px;
+  margin-top: -45px;
+}
+@media (max-width: 900px) {
+  .container__main__menu__section1__backround {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .container__main__menu__section1__backround {
+    padding: 30px;
+  }
+}
+.container__main__menu__section1__backround__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+.container__main__menu__section1__backround__title h3 {
+  color: #101010;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Shrikhand";
+}
+@media (max-width: 375px) {
+  .container__main__menu__section1__backround__title h3 {
+    font-size: 27px;
+  }
+}
+@media (max-width: 320px) {
+  .container__main__menu__section1__backround__title h3 {
+    font-size: 21px;
+  }
+}
+.container__main__menu__section1__backround__title i {
+  font-size: 28px;
+  color: #000000;
+  cursor: pointer;
+}
+.container__main__menu__section1__backround__title i:hover {
+  font-weight: 600;
+  color: #BB64DC;
+  transform: scale(1.1);
+  transition-delay: 0.2s;
+}
+.container__main__menu__section1__backround__blocks {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 65%;
+  margin: 50px 50px;
+  gap: 40px;
+}
+@media (max-width: 900px) {
+  .container__main__menu__section1__backround__blocks {
+    width: 100%;
+  }
+}
+.container__main__menu__section1__backround__blocks__block {
+  display: flex;
+  justify-content: flex-start;
+  align-items: self-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.container__main__menu__section1__backround__blocks__block h4 {
+  color: #000;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  border-bottom: solid 3px #99E2D0;
+  width: 7%;
+}
+.container__main__menu__section1__backround__blocks__block__card {
+  padding: 15px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container__main__menu__section1__backround__blocks__block__card__text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 80%;
+}
+.container__main__menu__section1__backround__blocks__block__card__text h5 {
+  color: #000;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 600;
+}
+.container__main__menu__section1__backround__blocks__block__card__text p {
+  color: #000;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.container__main__menu__section1__backround__blocks__block__card__price {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.container__main__menu__section1__backround__blocks__block__card__price span {
+  color: #353535;
+  font-family: Roboto;
+  font-size: 16x;
+  font-weight: 700;
+}
+.container__main__menu__section1__backround__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container__main__menu__section1__backround__btn button {
+  border: none;
+  padding: 17px 60px 17px 60px;
+  border-radius: 25px;
+  font-size: 17px;
+  color: white;
+  font-family: Roboto;
+  background: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  text-align: center;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
 .container__main__menu .container__footer__menu {
   background-color: #353535;
   padding: 30px 25px;
