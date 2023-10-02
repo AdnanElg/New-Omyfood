@@ -821,11 +821,11 @@ template {
   gap: 20px;
 }
 .container__main__menu__section1__backround__blocks__block h4 {
-  color: #000;
+  color: #000000;
   font-family: Roboto;
   font-size: 22px;
   font-weight: 300;
-  border-bottom: solid 3px #99E2D0;
+  border-bottom: solid 3px #99e2d0;
   width: 7%;
 }
 @media (max-width: 400px) {
@@ -897,13 +897,16 @@ template {
   width: 80%;
 }
 .container__main__menu__section1__backround__blocks__block__card__text h5 {
-  color: #000;
+  color: #000000;
   font-family: Roboto;
   font-size: 18px;
   font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .container__main__menu__section1__backround__blocks__block__card__text p {
-  color: #000;
+  color: #000000;
   font-family: Roboto;
   font-size: 16px;
   font-weight: 300;
@@ -922,6 +925,65 @@ template {
   font-family: Roboto;
   font-size: 16x;
   font-weight: 700;
+}
+.container__main__menu__section1__backround__blocks__block__card__check {
+  display: none;
+}
+.container__main__menu__section1__backround__blocks__block__card:hover {
+  cursor: pointer;
+  padding: 0px;
+}
+.container__main__menu__section1__backround__blocks__block__card:hover .container__main__menu__section1__backround__blocks__block__card__text {
+  padding-left: 15px;
+}
+@media (max-width: 500px) {
+  .container__main__menu__section1__backround__blocks__block__card:hover .container__main__menu__section1__backround__blocks__block__card__text {
+    width: 65%;
+  }
+}
+@media (max-width: 375px) {
+  .container__main__menu__section1__backround__blocks__block__card:hover .container__main__menu__section1__backround__blocks__block__card__text {
+    width: 50%;
+  }
+}
+@media (max-width: 650px) {
+  .container__main__menu__section1__backround__blocks__block__card:hover .container__main__menu__section1__backround__blocks__block__card__price {
+    padding-right: 15px;
+  }
+}
+.container__main__menu__section1__backround__blocks__block__card:hover .container__main__menu__section1__backround__blocks__block__card__check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 22px;
+  background-color: #99e2d0;
+  position: relative;
+  animation-duration: 1s;
+  animation-name: slidein;
+  border-radius: 0 15px 15px 0;
+}
+@keyframes slidein {
+  0% {
+    right: -4%;
+  }
+  100% {
+    right: 0%;
+  }
+}
+.container__main__menu__section1__backround__blocks__block__card:hover .container__main__menu__section1__backround__blocks__block__card__check i {
+  animation-duration: 1s;
+  animation-name: rotate;
+  color: white;
+  font-size: 30px;
+  border-radius: 50%;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 .container__main__menu__section1__backround__btn {
   display: flex;

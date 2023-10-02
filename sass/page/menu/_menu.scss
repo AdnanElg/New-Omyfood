@@ -106,7 +106,7 @@
 
          & i:hover {
           font-weight: 600;
-          color: #BB64DC;
+          color: variable.$quattuordecimary;
           transform: scale(1.1);
           transition-delay: 0.2s;
          }
@@ -132,11 +132,11 @@
           gap: 20px;
 
           & h4 {
-            color: #000;
+            color: variable.$octonary;
             font-family: Roboto;
             font-size: 22px;
             font-weight: 300;
-            border-bottom: solid 3px #99E2D0;
+            border-bottom: solid 3px variable.$tredecimary;
             width: 7%;
 
             @media (max-width: 400px) {
@@ -148,7 +148,7 @@
             padding: 15px;
             background-color: #ffff;
             border-radius: 15px;
-            box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+            box-shadow: 0.25rem 0.25rem 10px variable.$denary;
             width: 100%;
             display: flex;
             justify-content: space-between;
@@ -222,14 +222,17 @@
               width: 80%;
 
               & h5 {
-                color: #000;
+                color: variable.$octonary;
                 font-family: Roboto;
                 font-size: 18px;
                 font-weight: 600;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
               }
 
               & p {
-                color: #000;
+                color: variable.$octonary;
                 font-family: Roboto;
                 font-size: 16px;
                 font-weight: 300;
@@ -246,10 +249,74 @@
               flex-direction: column;
               
               & span {
-                color: #353535;
+                color: variable.$senary;
                 font-family: Roboto;
                 font-size: 16x;
                 font-weight: 700;
+              }
+            }
+
+            &__check {
+              display: none;
+            }
+
+            &:hover{
+              cursor: pointer;
+              padding: 0px;
+
+              .container__main__menu__section1__backround__blocks__block__card__text {
+                padding-left: 15px;
+
+                @media (max-width: 500px) {
+                  width: 65%;
+                  
+                }
+
+                @media (max-width: 375px) {
+                  width: 50%;
+                }
+              }
+
+              .container__main__menu__section1__backround__blocks__block__card__price{
+                @media (max-width: 650px) {
+                  padding-right: 15px;
+                }
+              }
+
+              .container__main__menu__section1__backround__blocks__block__card__check {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 22px;
+                background-color: variable.$tredecimary;
+                position: relative;
+                @keyframes slidein{
+                  0%{
+                      right: -4%;
+                      }
+                  100%{
+                      right: 0%;
+                      }  
+                } 
+                animation-duration: 1s;
+                animation-name: slidein;
+                border-radius: 0 15px 15px 0;
+
+                & i{
+                  @keyframes rotate {
+                    0% {
+                      transform: rotate(180deg);
+                    }
+                    100% {
+                      transform: rotate(360deg);
+                    }
+                  }               
+                  animation-duration: 1s;
+                  animation-name: rotate;
+                  color: variable.$primary;
+                  font-size: 30px;
+                  border-radius: 50%;
+                }
               }
             }
           }
