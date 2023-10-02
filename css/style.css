@@ -318,6 +318,66 @@ template {
   font-family: "Inter", sans-serif;
   src: url("/fonts/polices/Inter/static/Inter-Light.ttf") format("truetype");
 }
+.loader {
+  animation: loader 0.2s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  align-items: center;
+  background-color: white;
+  opacity: 0.9;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+}
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+.loader__itemContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+.loader__itemContainer__item {
+  animation-iteration-count: 1;
+  animation: jump 1s;
+  border-radius: 40px;
+  height: 35px;
+  width: 35px;
+}
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(0.5rem);
+  }
+  75% {
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.loader__itemContainer__item--1 {
+  background-color: violet;
+}
+.loader__itemContainer__item--2 {
+  animation-delay: 0.25s;
+  background-color: pink;
+}
+.loader__itemContainer__item--3 {
+  animation-delay: 0.5s;
+  background-color: rgb(7, 162, 179);
+}
+
 .container__header__homepage {
   display: flex;
   flex-direction: column;
@@ -379,7 +439,7 @@ template {
 }
 .container__main__homepage__section1 p {
   font-size: 18px;
-  color: #343535;
+  color: #353535;
   font-weight: 300;
   text-align: center;
   font-family: "Inter", sans-serif;
@@ -495,8 +555,11 @@ template {
   width: 600px;
   height: 280px;
   background-color: white !important;
-  cursor: pointer;
   position: relative;
+  cursor: pointer;
+}
+.container__main__homepage__section3__cards__card:hover {
+  transform: scale(1.1);
 }
 @media (max-width: 1439px) {
   .container__main__homepage__section3__cards__card {
@@ -688,7 +751,7 @@ template {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   width: 80%;
   padding: 50px;
   border-radius: 35px 35px 0px 0px;
@@ -711,17 +774,17 @@ template {
   gap: 35px;
 }
 .container__main__menu__section1__backround__title h3 {
-  color: #101010;
+  color: #353535;
   font-size: 30px;
   font-weight: 400;
   font-family: "Shrikhand";
 }
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   .container__main__menu__section1__backround__title h3 {
-    font-size: 27px;
+    font-size: 25px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 355px) {
   .container__main__menu__section1__backround__title h3 {
     font-size: 21px;
   }
@@ -760,10 +823,15 @@ template {
 .container__main__menu__section1__backround__blocks__block h4 {
   color: #000;
   font-family: Roboto;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 300;
   border-bottom: solid 3px #99E2D0;
   width: 7%;
+}
+@media (max-width: 400px) {
+  .container__main__menu__section1__backround__blocks__block h4 {
+    font-size: 20px;
+  }
 }
 .container__main__menu__section1__backround__blocks__block__card {
   padding: 15px;
@@ -774,6 +842,53 @@ template {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  animation: apparition 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  transform: scale(0);
+}
+@keyframes apparition {
+  0% {
+    transform: scale(0);
+    opacity: 0%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 100%;
+  }
+}
+.container__main__menu__section1__backround__blocks__block__card:nth-child(1) {
+  animation-delay: 0s;
+}
+.container__main__menu__section1__backround__blocks__block__card:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.container__main__menu__section1__backround__blocks__block__card:nth-child(3) {
+  animation-delay: 1s;
+}
+.container__main__menu__section1__backround__blocks__block__card:nth-child(4) {
+  animation-delay: 1.5s;
+}
+.container__main__menu__section1__backround__blocks__block__card:nth-child(5) {
+  animation-delay: 2s;
+}
+.container__main__menu__section1__backround__blocks__block__card:nth-child(6) {
+  animation-delay: 2.5s;
+}
+.container__main__menu__section1__backround__blocks__block__card:nth-child(7) {
+  animation-delay: 3s;
+}
+.container__main__menu__section1__backround__blocks__block__card:nth-child(8) {
+  animation-delay: 3.5s;
+}
+.container__main__menu__section1__backround__blocks__block__card:nth-child(9) {
+  animation-delay: 4s;
+}
+.container__main__menu__section1__backround__blocks__block__card:nth-child(10) {
+  animation-delay: 4.5s;
 }
 .container__main__menu__section1__backround__blocks__block__card__text {
   display: flex;

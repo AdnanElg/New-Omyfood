@@ -28,8 +28,10 @@ export const blockMenu = (data) => {
 const generateMenuCategory = (categoryName, items) => {
     return `
         <div class="container__main__menu__section1__backround__blocks__block">
-            <h4>${categoryName}</h4>
-            ${items.map((item) => generateMenuItem(item)).join('')}
+        <h4>${categoryName}</h4>
+        ${items.map((item) => {
+            return generateMenuItem(item);
+        }).join('')}
         </div>
     `;
 }

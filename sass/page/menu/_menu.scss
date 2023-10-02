@@ -1,3 +1,6 @@
+// Import variable color : 
+@use "../../utils/variable";
+
 // ********************* DÉBUT MENU ***********************/
 
 // Début de la font :
@@ -15,7 +18,7 @@
     justify-content: space-between;
     align-items: center;
     margin: 30px;
-    background-color: #ffff;
+    background-color: variable.$primary;
 
     & a img {
         max-width: 230px;
@@ -51,7 +54,7 @@
 
   // Début Section 1 :
   &__section1 {
-    background-color: #ffff;
+    background-color: variable.$primary;
     display: flex;
     justify-content: center;
 
@@ -60,7 +63,7 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      background-color: #F7F7F7;
+      background-color: variable.$septenary;
       width: 80%;
       padding: 50px;
       border-radius: 35px 35px 0px 0px;
@@ -81,23 +84,23 @@
         gap: 35px;
 
         & h3 {
-          color: #101010;
+          color: variable.$senary;
           font-size: 30px;
           font-weight: 400;
           font-family: "Shrikhand";
 
-          @media (max-width: 375px) {
-            font-size: 27px;
+          @media (max-width: 400px) {
+            font-size: 25px;
           }
 
-          @media (max-width: 320px) {
+          @media (max-width: 355px) {
             font-size: 21px;
           }
         }
 
         & i {
           font-size: 28px;
-          color: #000000;
+          color: variable.$octonary;
           cursor: pointer;
          }    
 
@@ -131,10 +134,14 @@
           & h4 {
             color: #000;
             font-family: Roboto;
-            font-size: 18px;
+            font-size: 22px;
             font-weight: 300;
             border-bottom: solid 3px #99E2D0;
             width: 7%;
+
+            @media (max-width: 400px) {
+              font-size: 20px;
+            }
           }
 
           &__card {
@@ -146,6 +153,67 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+
+            @keyframes apparition {
+              0% {
+                transform: scale(0);
+                opacity: 0%; 
+              }
+          
+              50% {
+                opacity: 0%;
+              }
+          
+              100%{
+                 transform: scale(1);
+                 opacity: 100%;
+              }
+          
+            }           
+            animation: apparition .5s; 
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+            transform: scale(0);
+
+            &:nth-child(1) { 
+              animation-delay: 0s; 
+            } 
+
+            &:nth-child(2) { 
+              animation-delay: 0.5s; 
+            }
+
+            &:nth-child(3) { 
+              animation-delay: 1s; 
+            }
+
+            &:nth-child(4) { 
+              animation-delay: 1.5s 
+            }
+
+            &:nth-child(5) { 
+              animation-delay: 2s; 
+            }
+
+            &:nth-child(6) { 
+              animation-delay: 2.5s; 
+            }
+
+            &:nth-child(7) { 
+              animation-delay: 3s 
+            }
+
+            &:nth-child(8) { 
+              animation-delay: 3.5s; 
+            }
+
+            &:nth-child(9) { 
+              animation-delay: 4s 
+            }
+
+            &:nth-child(10) { 
+              animation-delay: 4.5s; 
+            }
 
             &__text {
               display: flex;
@@ -198,15 +266,14 @@
           padding: 17px 60px 17px 60px;
           border-radius: 25px;
           font-size: 17px;
-          color: #ffff;
+          color: variable.$primary;
           font-family: Roboto;
           background: linear-gradient(
             to top,
-            rgba(147, 86, 220, 0.9),
-            rgba(255, 121, 218, 0.9)
+            variable.$nonary
           );
           text-align: center;
-          box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0.25rem 0.25rem 10px variable.$denary;
           cursor: pointer;
         }
       }
@@ -216,7 +283,7 @@
   
   // Début du footer : 
   .container__footer__menu {
-    background-color: #353535;
+    background-color: variable.$senary;
     padding: 30px 25px;
     display: flex;
     flex-direction: row;
@@ -251,11 +318,11 @@
         gap: 10px;
 
         & img {
-          color: #ffff;
+          color: variable.$primary;
           object-fit: cover;
         }
         & p {
-          color: #ffff;
+          color: variable.$primary;
         }
       }
     }
@@ -273,7 +340,7 @@
       }
 
       & p {
-        color: #ffff;
+        color: variable.$primary;
       }
     }
     &__block3 {
