@@ -46,6 +46,9 @@ const generateMenuItem = (item) => {
             <div class="container__main__menu__section1__backround__blocks__block__card__price">
                 <span>${item.price}</span>
             </div>
+            <div class="container__main__menu__section1__backround__blocks__block__card__check">
+                <i class="fa fa-check-circle"></i>
+            </div>
         </div>
     `;
 }
